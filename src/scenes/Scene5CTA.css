@@ -1,0 +1,62 @@
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.s5-portal-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(50% 60% at 50% 50%, rgba(16,185,129, calc(0.16 + var(--portal-i, 0.5) * 0.18)) 0%, transparent 70%);
+}
+.s5-ring {
+  position: absolute; left: 50%; top: 50%;
+  width: 600px; height: 600px; border-radius: 50%;
+  border: 0.5px solid rgba(16,185,129,0.32);
+  will-change: transform, opacity;
+}
+.s5-form {
+  position: relative;
+  background: rgba(10,21,15, 0.65);
+  backdrop-filter: blur(20px);
+  border: 0.5px solid var(--border-hover); border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 0 80px rgba(16,185,129,0.16);
+}
+.s5-confetti {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 10;
+}
+.s5-check {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: rgba(16,185,129,0.16); border: 0.5px solid rgba(16,185,129,0.4);
+  display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px;
+}
+.s5-foot {
+  margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 12px;
+  opacity: 0.7;
+}
+.s5-foot img { height: 18px; }
+.s5-foot span {
+  font-family: Manrope, sans-serif; font-size: 12px; color: #3D5E4B;
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+
+/* Liquid button */
+.s5-liquid {
+  position: relative; height: 56px; padding: 0 32px; border-radius: 12px;
+  background: #10B981; border: 0; cursor: pointer; overflow: hidden;
+  box-shadow: 0 0 40px rgba(16,185,129,0.5);
+  transition: box-shadow 0.3s;
+}
+.s5-liquid:hover { box-shadow: 0 0 60px rgba(16,185,129,0.7); }
+.s5-liquid-blob {
+  position: absolute; left: var(--lx, 50%); top: var(--ly, 50%);
+  width: 240px; height: 240px;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 60%);
+  border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none;
+  transition: width 0.4s cubic-bezier(0.22,1,0.36,1), height 0.4s cubic-bezier(0.22,1,0.36,1);
+}
+.s5-liquid:hover .s5-liquid-blob { width: 360px; height: 360px; }
+.s5-liquid-text {
+  position: relative; font-family: Manrope, sans-serif; font-weight: 600;
+  font-size: 16px; color: #fff; letter-spacing: 0.01em;
+}

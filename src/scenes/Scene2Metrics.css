@@ -1,0 +1,100 @@
+.s2-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(16,185,129,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,185,129,0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask: radial-gradient(circle at center, black 0%, transparent 70%);
+  -webkit-mask: radial-gradient(circle at center, black 0%, transparent 70%);
+  opacity: 0.7;
+}
+
+.s2-title {
+  position: absolute; top: 56px; left: 50%; transform: translateX(-50%);
+  text-align: center; z-index: 4;
+}
+
+.s2-ring {
+  position: absolute; left: 50%; top: 50%;
+  width: 720px; height: 720px; border-radius: 50%;
+  border: 0.5px solid rgba(16,185,129,0.25);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.s2-orb {
+  position: absolute; left: 50%; top: 50%;
+  width: 220px; height: 220px; border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(circle at 35% 35%, #13C28C 0%, #10B981 30%, #0B7553 70%, #052821 100%);
+  box-shadow:
+    0 0 calc(60px + 80px * var(--orb-glow, 0.5)) rgba(16,185,129, calc(0.3 + 0.5 * var(--orb-glow, 0.5))),
+    0 0 calc(120px + 160px * var(--orb-glow, 0.5)) rgba(16,185,129, calc(0.12 + 0.25 * var(--orb-glow, 0.5))),
+    inset -20px -20px 50px rgba(0,0,0,0.4),
+    inset 20px 20px 60px rgba(255,255,255,0.06);
+  z-index: 3;
+}
+.s2-orb-core {
+  position: absolute; inset: 22%; border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, rgba(255,255,255,0.5) 0%, transparent 35%);
+  mix-blend-mode: screen;
+}
+.s2-orb-inner {
+  position: absolute; inset: 8%; border-radius: 50%;
+  border: 0.5px solid rgba(255,255,255,0.18);
+  mix-blend-mode: overlay;
+}
+.s2-orb-flares {
+  position: absolute; inset: -50%; border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 50%, rgba(16,185,129,0.18) 51%, transparent 53%);
+  animation: s2-flare 6s linear infinite;
+  mix-blend-mode: screen;
+}
+@keyframes s2-flare { to { transform: rotate(360deg); } }
+
+.s2-orbit { position: absolute; left: 50%; top: 50%; width: 0; height: 0; }
+
+.s2-metric {
+  position: absolute; transform: translate(-50%, -50%);
+  padding: 14px 18px; min-width: 140px;
+  background: rgba(15,30,22, calc(0.78 + 0.18 * var(--focus, 0)));
+  backdrop-filter: blur(12px);
+  border: 0.5px solid rgba(30, 61, 42, calc(0.6 + 0.4 * var(--focus, 0)));
+  border-radius: 12px;
+  opacity: 0;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4), 0 0 calc(8px + 24px * var(--focus, 0)) rgba(16,185,129, calc(0.05 + 0.20 * var(--focus, 0)));
+  transition: background 0.4s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+.s2-metric-value {
+  font-family: Lora, serif; font-weight: 700; font-size: 32px; color: #E2C87E;
+  letter-spacing: -0.02em; line-height: 1;
+  filter: drop-shadow(0 0 calc(2px + 8px * var(--focus, 0)) rgba(226,200,126, calc(0.2 + 0.6 * var(--focus, 0))));
+}
+.s2-metric-value.mono { font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+.s2-metric-value span {
+  font-family: Manrope, sans-serif; font-weight: 500; font-size: 16px;
+  margin-left: 2px; color: #E2C87E;
+}
+.s2-metric-label {
+  margin-top: 8px;
+  font-family: Manrope, sans-serif; font-size: 11px; color: #ABABAB;
+  letter-spacing: 0.04em; line-height: 1.3;
+}
+
+.s2-token {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: rgba(171,171,171,0.7);
+  padding: 3px 8px; border-radius: 999px;
+  background: rgba(15,30,22,0.4);
+  border: 0.5px solid rgba(21,46,30,0.5);
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .s2-orb-flares { animation: none; }
+}

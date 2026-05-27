@@ -1,0 +1,61 @@
+.s3-title {
+  position: absolute; top: 56px; left: 50%; transform: translateX(-50%);
+  text-align: center; z-index: 4;
+}
+.s3-bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(16,185,129,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,185,129,0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask: radial-gradient(circle at center, black 0%, transparent 75%);
+  -webkit-mask: radial-gradient(circle at center, black 0%, transparent 75%);
+}
+.s3-track {
+  position: absolute; top: 50%; left: 8%; right: 0;
+  transform: translate3d(0, -50%, 0);
+  display: flex; gap: 80px; padding-right: 120px;
+  will-change: transform;
+}
+.s3-step {
+  width: 480px; flex: 0 0 auto; position: relative;
+  opacity: 0; transform: translate3d(0, 30px, 0);
+  will-change: transform, opacity;
+  filter: opacity(calc(0.35 + 0.65 * var(--focus, 1)));
+  transition: filter 0.5s var(--ease-out);
+}
+.s3-icon {
+  position: relative; width: 80px; height: 80px; border-radius: 50%;
+  background: var(--bg-card); border: 0.5px solid var(--border-hover);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 0 calc(20px + 30px * var(--focus, 0)) rgba(16,185,129, calc(0.08 + 0.18 * var(--focus, 0)));
+}
+.s3-icon-ring {
+  position: absolute; inset: -6px; border-radius: 50%;
+  border: 0.5px solid rgba(16,185,129,0.18);
+  animation: s3-ring 3s var(--ease-out) infinite;
+}
+@keyframes s3-ring {
+  0% { transform: scale(0.9); opacity: 0; }
+  40% { opacity: 0.6; }
+  100% { transform: scale(1.3); opacity: 0; }
+}
+.s3-icon-num {
+  position: absolute; top: -10px; right: -10px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #3D5E4B;
+  background: var(--bg-base); padding: 2px 6px; border-radius: 4px;
+  border: 0.5px solid var(--border);
+}
+.s3-step-title {
+  font-family: 'Lora', serif; font-weight: 600; font-size: 28px;
+  color: #EFECE1; margin: 0 0 12px; letter-spacing: -0.01em; line-height: 1.2;
+}
+.s3-step-text {
+  font-family: 'Manrope', sans-serif; font-size: 15px; line-height: 1.6;
+  color: #ABABAB; margin: 0; max-width: 380px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .s3-icon-ring { animation: none; }
+}
