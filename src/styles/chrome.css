@@ -10,7 +10,7 @@
 }
 .nav-logo {
   display: flex; align-items: center; gap: 10px;
-  font-family: Lora, serif; font-weight: 700; font-size: 18px;
+  font-family: 'Lora Variable', serif; font-weight: 700; font-size: 18px;
   color: #EFECE1; letter-spacing: -0.02em;
   text-decoration: none;
 }
@@ -18,7 +18,7 @@
   display: flex; align-items: center; gap: 28px;
 }
 .nav-links a {
-  font-family: Manrope, sans-serif; font-size: 13px; color: #ABABAB;
+  font-family: 'Manrope Variable', sans-serif; font-size: 13px; color: #ABABAB;
   text-decoration: none; transition: color 0.2s;
 }
 .nav-links a:hover { color: #EFECE1; }
@@ -69,7 +69,7 @@
   box-shadow: 0 0 8px #10B981;
 }
 .chapter-label {
-  font-family: Manrope, sans-serif; font-size: 11px;
+  font-family: 'Manrope Variable', sans-serif; font-size: 11px;
   letter-spacing: 0.08em; text-transform: uppercase;
   display: flex; align-items: baseline; gap: 8px;
   opacity: 0; transform: translateX(-4px);
@@ -77,7 +77,7 @@
 }
 .chapter-dot:hover .chapter-label,
 .chapter-dot.is-active .chapter-label { opacity: 1; transform: translateX(0); }
-.chapter-num { color: #3D5E4B; font-family: 'JetBrains Mono', monospace; }
+.chapter-num { color: #3D5E4B; font-family: 'JetBrains Mono Variable', monospace; }
 .chapter-name { color: inherit; }
 @media (max-width: 800px) { .chapter-rail { display: none; } }
 @media (max-width: 768px) {

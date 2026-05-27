@@ -11,11 +11,11 @@ import './styles/tokens.css';
 import './styles/chrome.css';
 
 const CHAPTERS = [
-  { label: 'Игрок',      from: 0.00, to: 0.18 },
-  { label: 'Метрики',    from: 0.18, to: 0.40 },
-  { label: 'Поток',      from: 0.40, to: 0.62 },
-  { label: 'Дашборд',    from: 0.62, to: 0.84 },
-  { label: 'Запросить',  from: 0.84, to: 1.00 },
+  { label: 'Игрок',      from: 0.00, to: 0.15 },
+  { label: 'Метрики',    from: 0.15, to: 0.33 },
+  { label: 'Поток',      from: 0.33, to: 0.51 },
+  { label: 'Дашборд',    from: 0.51, to: 0.85 },
+  { label: 'Запросить',  from: 0.85, to: 1.00 },
 ];
 
 function MasterProgress() {
@@ -73,21 +73,21 @@ export default function App() {
 
       <div className="master-progress" id="master-progress" />
 
-      <Stage scrollHeight="1100vh" chapters={CHAPTERS}>
-        <Scene from={0.00} to={0.18} label="01 Игрок">
-          <Scene1Hero from={0.00} to={0.18} />
+      <Stage scrollHeight="1300vh" chapters={CHAPTERS}>
+        <Scene from={0.00} to={0.15} label="01 Игрок">
+          <Scene1Hero from={0.00} to={0.15} />
         </Scene>
-        <Scene from={0.18} to={0.40} label="02 Метрики">
-          <Scene2Metrics from={0.18} to={0.40} />
+        <Scene from={0.15} to={0.33} label="02 Метрики">
+          <Scene2Metrics from={0.15} to={0.33} />
         </Scene>
-        <Scene from={0.40} to={0.62} label="03 Поток">
-          <Scene3Flow from={0.40} to={0.62} />
+        <Scene from={0.33} to={0.51} label="03 Поток">
+          <Scene3Flow from={0.33} to={0.51} />
         </Scene>
-        <Scene from={0.62} to={0.84} label="04 Дашборд">
-          <Scene4Dashboard from={0.62} to={0.84} />
+        <Scene from={0.51} to={0.85} label="04 Дашборд">
+          <Scene4Dashboard from={0.51} to={0.85} />
         </Scene>
-        <Scene from={0.84} to={1.00} label="05 Запросить пилот">
-          <Scene5CTA from={0.84} to={1.00} />
+        <Scene from={0.85} to={1.00} label="05 Запросить пилот">
+          <Scene5CTA from={0.85} to={1.00} />
         </Scene>
       </Stage>
     </>

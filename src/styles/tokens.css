@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* Fonts loaded locally via @fontsource-variable in main.jsx */
 
 :root {
   --bg-base:        #060D09;
@@ -20,9 +20,9 @@
   --emerald-glow:   rgba(16, 185, 129, 0.12);
   --emerald-glow-strong: rgba(16, 185, 129, 0.22);
 
-  --font-serif: 'Lora', 'Times New Roman', serif;
-  --font-sans:  'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --font-mono:  'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-serif: 'Lora Variable', 'Times New Roman', serif;
+  --font-sans:  'Manrope Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono:  'JetBrains Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
 
   --t-h1-size: 52px;     --t-h1-lh: 1.08; --t-h1-tracking: -0.02em; --t-h1-weight: 700;
   --t-h2-size: 32px;     --t-h2-lh: 1.15; --t-h2-tracking: -0.01em; --t-h2-weight: 600;

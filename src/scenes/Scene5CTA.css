@@ -36,7 +36,7 @@
 }
 .s5-foot img { height: 18px; }
 .s5-foot span {
-  font-family: Manrope, sans-serif; font-size: 12px; color: #3D5E4B;
+  font-family: 'Manrope Variable', sans-serif; font-size: 12px; color: #3D5E4B;
   letter-spacing: 0.08em; text-transform: uppercase;
 }
 
@@ -57,6 +57,6 @@
 }
 .s5-liquid:hover .s5-liquid-blob { width: 360px; height: 360px; }
 .s5-liquid-text {
-  position: relative; font-family: Manrope, sans-serif; font-weight: 600;
+  position: relative; font-family: 'Manrope Variable', sans-serif; font-weight: 600;
   font-size: 16px; color: #fff; letter-spacing: 0.01em;
 }

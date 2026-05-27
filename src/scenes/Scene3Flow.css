@@ -43,16 +43,16 @@
 }
 .s3-icon-num {
   position: absolute; top: -10px; right: -10px;
-  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #3D5E4B;
+  font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; color: #3D5E4B;
   background: var(--bg-base); padding: 2px 6px; border-radius: 4px;
   border: 0.5px solid var(--border);
 }
 .s3-step-title {
-  font-family: 'Lora', serif; font-weight: 600; font-size: 28px;
+  font-family: 'Lora Variable', serif; font-weight: 600; font-size: 28px;
   color: #EFECE1; margin: 0 0 12px; letter-spacing: -0.01em; line-height: 1.2;
 }
 .s3-step-text {
-  font-family: 'Manrope', sans-serif; font-size: 15px; line-height: 1.6;
+  font-family: 'Manrope Variable', sans-serif; font-size: 15px; line-height: 1.6;
   color: #ABABAB; margin: 0; max-width: 380px;
 }
 

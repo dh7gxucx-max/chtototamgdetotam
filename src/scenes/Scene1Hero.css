@@ -93,31 +93,31 @@
 .s1-avatar {
   width: 28px; height: 28px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-family: Manrope, sans-serif; font-size: 12px; color: #EFECE1;
+  font-family: 'Manrope Variable', sans-serif; font-size: 12px; color: #EFECE1;
 }
 .s1-avatar-user { background: rgba(239,236,225,0.08); border: 0.5px solid rgba(239,236,225,0.18); }
 .s1-avatar-agent { background: rgba(16,185,129,0.16); border: 0.5px solid rgba(16,185,129,0.4); }
 .s1-name {
-  font-family: Manrope, sans-serif; font-size: 12px; color: #EFECE1; font-weight: 500;
+  font-family: 'Manrope Variable', sans-serif; font-size: 12px; color: #EFECE1; font-weight: 500;
   display: inline-flex; align-items: center; gap: 6px;
 }
 .s1-name-agent { color: #EFECE1; }
 .s1-badge {
-  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  font-family: 'JetBrains Mono Variable', monospace; font-size: 9px;
   color: #10B981; background: rgba(16,185,129,0.14);
   border: 0.5px solid rgba(16,185,129,0.35);
   padding: 1px 5px; border-radius: 3px;
   letter-spacing: 0.08em; text-transform: uppercase;
 }
 .s1-time {
-  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  font-family: 'JetBrains Mono Variable', monospace; font-size: 10px;
   color: #3D5E4B; letter-spacing: 0.06em;
 }
 .s1-bubble-body {
-  font-family: Manrope, sans-serif; font-size: 15px;
+  font-family: 'Manrope Variable', sans-serif; font-size: 15px;
   color: #EFECE1; line-height: 1.5; text-align: left;
 }
-.s1-mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #ABABAB; }
+.s1-mono { font-family: 'JetBrains Mono Variable', monospace; font-size: 13px; color: #ABABAB; }
 .s1-link { color: #13C28C; }
 .s1-bubble-typing { margin-top: 12px; display: flex; gap: 6px; padding: 6px 0; }
 .s1-bubble-typing span {
